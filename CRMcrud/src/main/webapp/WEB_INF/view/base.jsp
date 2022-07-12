@@ -29,4 +29,4 @@
 	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 	crossorigin="anonymous"></script>
 
-<title><c:out value="${title }">CRM CRUD</c:out></title>
+<title><c:out value="${title }">CustomerRelationshipManagement</c:out></title>

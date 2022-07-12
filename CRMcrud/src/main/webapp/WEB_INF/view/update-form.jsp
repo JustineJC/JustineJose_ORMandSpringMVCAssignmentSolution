@@ -12,33 +12,33 @@
 		<div class="row">
 			<div class="col-md-6 offset-md-3">
 				<h1 class="text-center mb-3">Update Customer Details</h1>
-				<form action="${pageContext.request.contextPath }/handle-customer"
+				<form action="handle-updateCustomer"
 					method="post">
-					<input type="text" value="${customer.id}" name="id" />
+					<input type="hidden" value="${customer.id}" name="id" />
 					<div class="form-group">
-						<label for="f_name">Student first Name</label> <input type="text"
-							class="form-control" id="f_name" aria-describedby="emailhelp"
-							name="f_name" placeholder="update the customer name here"
-							value="${customer.f_name }">
+						<label for="firstname">Student first Name</label> <input type="text"
+							class="form-control" id="firstname" aria-describedby="emailhelp"
+							name="firstname" placeholder="update the customer first name here"
+							value="${customer.firstname }">
 					</div>
 					<div class="form-group">
-						<label for="department">Customer Last Name</label><input
-							type="text" class="form-control" id="l_name"
-							name="l_name"
+						<label for="lastname">Customer Last Name</label><input
+							type="text" class="form-control" id="lastname"
+							name="lastname"
 							placeholder="update the customer last name here"
-							value="${student.l_name}">
+							value="${customer.lastname}">
 					</div>
 					<div class="form-group">
 						<label for="email">Student email</label><input type="text"
 							class="form-control" id="email" name="email"
 							placeholder="update the customer email here"
-							value="${student.email}">
+							value="${customer.email}">
 					</div>
 					<div class="container text-center">
-						<a href="${pageContext.request.contextPath }/"
+						<a href="list_customers"
 							class="btn btn-outline-danger">Back</a>
-						<button type="submit" class="btn btn-primary">Update
-							Customer</button>
+						<button type="submit" class="btn btn-outline-warning">Update
+							</button>
 					</div>
 
 
